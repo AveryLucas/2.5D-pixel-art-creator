@@ -1,46 +1,41 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link href="justchill.css" rel="stylesheet">
-        <style>
-            body {
-                margin: 0;
-            }
+  <head>
+    <style>
+        body {
+        margin: 0;
+        }
+        canvas {
+        border: 1px solid black;
+        /* margin: 5px; */
+        }
+        .noflex {
+        flex: 0;
+        }
 
-            canvas {
-                border: 1px solid black;
-                margin: 5px;
-            }
-
-            .noflex {
-                flex: 0;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <canvas id="canvas" width="640" height="600" class="noflex"></canvas>
-            <div>
-                <span>Drawing Information</span>
-                <input id="currentcolor" type="color">
-                <br>
-                <span id="erasermode">eraser mode: false</span>
-                <br>
-                <span id="currentlayer">current layer: 1</span>
-                <br>
-                <span>3D Effect Information (Will update once in live mode)</span>
-                <span id="currentlayeroffset">layer offset force: 0</span>
-                <br>
-                <span id="slowchange">slow change: disabled</span>
-                <br>
-                <span id="switchlayers">move layers: false</span>
-            </div>
-        </div>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
-        <script type="text/javascript" src="app.js"></script>
-        <script type="text/javascript"> 
-            $(document).ready(function() {
-                drawgrid();
-            });
-        </script>
-    </body>
+        #cont {
+        position: relative;
+        }
+        #cont canvas, #overlay {
+        position: absolute;
+        }
+        canvas {
+        border: 1px solid black;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <canvas class="noflex" id="canvas" width="640" height="600">
+          <p>test</p>
+      </canvas>
+      <div><span>Drawing Information</span>
+        <input id="currentcolor" type="color"><br><span id="erasermode">eraser mode: false</span><br><span id="currentlayer">current layer: 1</span><br><span>3D Effect Information (Will update once in live mode)</span><span id="currentlayeroffset">layer offset force: 0</span><br><span id="slowchange">slow change: disabled</span><br><span id="switchlayers">move layers: false</span>
+      </div>
+      <div id="saveinfo"></div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+    <script type="text/javascript" src="drawer.js"></script>
+    <!--script(type='text/javascript', src='app.js')-->
+  </body>
 </html>

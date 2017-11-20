@@ -1,0 +1,415 @@
+.container {
+  padding: 0 15px;
+}
+
+.flexrow {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexrow, .flexcol {
+  margin: 0 -15;
+}
+.flexrow .flexrow, .flexrow .flexcol, .flexcol .flexrow, .flexcol .flexcol {
+  margin: 0;
+}
+.flexrow.justify-center, .flexcol.justify-center {
+  justify-content: center;
+}
+.flexrow.justify-start, .flexcol.justify-start {
+  justify-content: start;
+}
+.flexrow.justify-end, .flexcol.justify-end {
+  justify-content: end;
+}
+.flexrow.justify-between, .flexcol.justify-between {
+  justify-content: space-between;
+}
+.flexrow.justify-around, .flexcol.justify-around {
+  justify-content: space-around;
+}
+.flexrow.align-center, .flexcol.align-center {
+  align-content: center;
+}
+.flexrow.align-start, .flexcol.align-start {
+  align-content: start;
+}
+.flexrow.align-end, .flexcol.align-end {
+  align-content: end;
+}
+.flexrow.align-between, .flexcol.align-between {
+  align-content: space-between;
+}
+.flexrow.align-around, .flexcol.align-around {
+  align-content: space-around;
+}
+.flexrow .align-center, .flexcol .align-center {
+  align-self: center;
+}
+.flexrow .align-start, .flexcol .align-start {
+  align-self: center;
+}
+.flexrow .align-end, .flexcol .align-end {
+  align-self: center;
+}
+.flexrow .align-between, .flexcol .align-between {
+  align-self: center;
+}
+.flexrow .align-around, .flexcol .align-around {
+  align-self: center;
+}
+.flexrow .one, .flexrow .two, .flexrow .three, .flexrow .four, .flexrow .five, .flexrow .six, .flexrow .seven, .flexrow .eight, .flexrow .nine, .flexrow .ten, .flexrow .eleven, .flexrow .twelve, .flexcol .one, .flexcol .two, .flexcol .three, .flexcol .four, .flexcol .five, .flexcol .six, .flexcol .seven, .flexcol .eight, .flexcol .nine, .flexcol .ten, .flexcol .eleven, .flexcol .twelve {
+  position: relative;
+  min-height: 1px;
+  margin: 0.54%;
+}
+.flexrow .auto, .flexcol .auto {
+  flex: 1;
+}
+.flexrow .one, .flexcol .one {
+  max-width: 7.25%;
+  flex-basis: 7.25%;
+}
+.flexrow .two, .flexcol .two {
+  max-width: 15.58%;
+  flex-basis: 15.58%;
+}
+.flexrow .three, .flexcol .three {
+  max-width: 23.92%;
+  flex-basis: 23.92%;
+}
+.flexrow .four, .flexcol .four {
+  max-width: 32.25%;
+  flex-basis: 32.25%;
+}
+.flexrow .five, .flexcol .five {
+  max-width: 40.58%;
+  flex-basis: 40.58%;
+}
+.flexrow .six, .flexcol .six {
+  max-width: 48.92%;
+  flex-basis: 48.92%;
+}
+.flexrow .seven, .flexcol .seven {
+  max-width: 57.25%;
+  flex-basis: 57.25%;
+}
+.flexrow .eight, .flexcol .eight {
+  max-width: 65.58%;
+  flex-basis: 65.58%;
+}
+.flexrow .nine, .flexcol .nine {
+  max-width: 73.92%;
+  flex-basis: 73.92%;
+}
+.flexrow .ten, .flexcol .ten {
+  max-width: 82.25%;
+  flex-basis: 82.25%;
+}
+.flexrow .eleven, .flexcol .eleven {
+  max-width: 90.58%;
+  flex-basis: 90.58%;
+}
+.flexrow .twelve, .flexcol .twelve {
+  max-width: 98.92%;
+  flex-basis: 98.92%;
+}
+
+.flexrow.reverse {
+  flex-flow: row-reverse wrap;
+}
+
+.flexcol.reverse {
+  flex-flow: column-reverse wrap;
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .flexrow.collapse-desktop {
+    flex-direction: row;
+  }
+
+  .desktop-1 {
+    max-width: 7.25%;
+    flex-basis: 7.25%;
+  }
+
+  .desktop-2 {
+    max-width: 15.58%;
+    flex-basis: 15.58%;
+  }
+
+  .desktop-3 {
+    max-width: 23.92%;
+    flex-basis: 23.92%;
+  }
+
+  .desktop-4 {
+    max-width: 32.25%;
+    flex-basis: 32.25%;
+  }
+
+  .desktop-5 {
+    max-width: 40.58%;
+    flex-basis: 40.58%;
+  }
+
+  .desktop-6 {
+    max-width: 48.92%;
+    flex-basis: 48.92%;
+  }
+
+  .desktop-7 {
+    max-width: 57.25%;
+    flex-basis: 57.25%;
+  }
+
+  .desktop-8 {
+    max-width: 65.58%;
+    flex-basis: 65.58%;
+  }
+
+  .desktop-9 {
+    max-width: 73.92%;
+    flex-basis: 73.92%;
+  }
+
+  .desktop-10 {
+    max-width: 82.25%;
+    flex-basis: 82.25%;
+  }
+
+  .desktop-11 {
+    max-width: 90.58%;
+    flex-basis: 90.58%;
+  }
+
+  .desktop-12 {
+    max-width: 98.92%;
+    flex-basis: 98.92%;
+  }
+}
+@media only screen and (min-width: 992px) {
+
+  .flexrow.collapse-laptop {
+    flex-direction: row;
+  }
+
+  .laptop-1 {
+    max-width: 7.25%;
+    flex-basis: 7.25%;
+  }
+
+  .laptop-2 {
+    max-width: 15.58%;
+    flex-basis: 15.58%;
+  }
+
+  .laptop-3 {
+    max-width: 23.92%;
+    flex-basis: 23.92%;
+  }
+
+  .laptop-4 {
+    max-width: 32.25%;
+    flex-basis: 32.25%;
+  }
+
+  .laptop-5 {
+    max-width: 40.58%;
+    flex-basis: 40.58%;
+  }
+
+  .laptop-6 {
+    max-width: 48.92%;
+    flex-basis: 48.92%;
+  }
+
+  .laptop-7 {
+    max-width: 57.25%;
+    flex-basis: 57.25%;
+  }
+
+  .laptop-8 {
+    max-width: 65.58%;
+    flex-basis: 65.58%;
+  }
+
+  .laptop-9 {
+    max-width: 73.92%;
+    flex-basis: 73.92%;
+  }
+
+  .laptop-10 {
+    max-width: 82.25%;
+    flex-basis: 82.25%;
+  }
+
+  .laptop-11 {
+    max-width: 90.58%;
+    flex-basis: 90.58%;
+  }
+
+  .laptop-12 {
+    max-width: 98.92%;
+    flex-basis: 98.92%;
+  }
+}
+@media only screen and (min-width: 768px) {
+
+  .flexrow.collapse-tablet {
+    flex-direction: column;
+  }
+
+  .tablet-1 {
+    max-width: 7.25%;
+    flex-basis: 7.25%;
+  }
+
+  .tablet-2 {
+    max-width: 15.58%;
+    flex-basis: 15.58%;
+  }
+
+  .tablet-3 {
+    max-width: 23.92%;
+    flex-basis: 23.92%;
+  }
+
+  .tablet-4 {
+    max-width: 32.25%;
+    flex-basis: 32.25%;
+  }
+
+  .tablet-5 {
+    max-width: 40.58%;
+    flex-basis: 40.58%;
+  }
+
+  .tablet-6 {
+    max-width: 48.92%;
+    flex-basis: 48.92%;
+  }
+
+  .tablet-7 {
+    max-width: 57.25%;
+    flex-basis: 57.25%;
+  }
+
+  .tablet-8 {
+    max-width: 57.25%;
+    flex-basis: 57.25%;
+  }
+
+  .tablet-9 {
+    max-width: 73.92%;
+    flex-basis: 73.92%;
+  }
+
+  .tablet-10 {
+    max-width: 82.25%;
+    flex-basis: 82.25%;
+  }
+
+  .tablet-11 {
+    max-width: 90.58%;
+    flex-basis: 90.58%;
+  }
+
+  .tablet-12 {
+    max-width: 98.92%;
+    flex-basis: 98.92%;
+  }
+}
+@media only screen and (max-width: 480px) {
+
+  .flexrow.collapse-phone {
+    flex-direction: column;
+  }
+
+  .phone-1 {
+    max-width: 7.25%;
+    flex-basis: 7.25%;
+  }
+
+  .phone-2 {
+    max-width: 15.58%;
+    flex-basis: 15.58%;
+  }
+
+  .phone-3 {
+    max-width: 23.92%;
+    flex-basis: 23.92%;
+  }
+
+  .phone-4 {
+    max-width: 32.25%;
+    flex-basis: 32.25%;
+  }
+
+  .phone-5 {
+    max-width: 40.58%;
+    flex-basis: 40.58%;
+  }
+
+  .phone-6 {
+    max-width: 48.92%;
+    flex-basis: 48.92%;
+  }
+
+  .phone-7 {
+    max-width: 57.25%;
+    flex-basis: 57.25%;
+  }
+
+  .phone-8 {
+    max-width: 57.25%;
+    flex-basis: 57.25%;
+  }
+
+  .phone-9 {
+    max-width: 73.92%;
+    flex-basis: 73.92%;
+  }
+
+  .phone-10 {
+    max-width: 82.25%;
+    flex-basis: 82.25%;
+  }
+
+  .phone-11 {
+    max-width: 90.58%;
+    flex-basis: 90.58%;
+  }
+
+  .phone-12 {
+    max-width: 98.92%;
+    flex-basis: 98.92%;
+  }
+}
+
+#canvascontainer {
+  position: relative;
+  background-color: grey;
+  /* width: 1280px; */
+  height: 100vh;
+}
+
+div.twelve.settings {
+  background: #1a1a1a;
+  color: white;
+  margin: 0;
+}
+
+div.twelve.settings button {
+  background: white;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 1px;
+  margin: 5px;
+}
