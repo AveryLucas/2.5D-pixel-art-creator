@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="justchill.css">
+	</head>
+	<body>
+		<div class="flexcol app">
+				<span class="twelve" id="saveinfo"></span>
+			<div class="twelve settings flexrow justify-around">
+
+				<div class="settings-group flexcol">
+					<label>Color</label>
+					<div class="flexrow">
+						<input id="hexcolor" type="text">
+						<button id="applycolor">apply</button>
+					</div>
+					<input id="color" type="color">
+				</div>
+
+				<div class="settings-group flexcol">
+						<label>Tools</label>
+						<button id="eraser">eraser tool (e)</button>
+						<button id="brush">brush tool (b)</button>
+				</div>
+
+				<div class="settings-group flexcol">
+						<label>Layer Info</label>
+						<span id="slowchange">slow change mode: disabled</span>
+						<span id="currentlayer">current layer: 1</span>
+						<span id="currentlayeroffset">layer offset force: please process layers</span>
+						<span id="rotationstrength">rotation strength: please process layers</span>
+				</div>
+
+				<div class="settings-group flexcol">
+						<label>Only if current layer is empty</label>
+						<button>64x64</button>
+						<button>32x32</button>
+						<button>20x20</button>
+				</div>
+
+				<div class="settings-group flexcol">
+						<label>Controls</label>
+						<span>Left: lower offset</span>
+						<span>Right: raise offset</span>
+						<span>Up: go to next layer</span>
+						<span>Down: go to previous layer</span>
+						<span>Caps: rotation offset mode (left, right)</span>
+						<span>Shift: move layer mode</span>
+						<span>Ctrl: enable slow adjustments</span>
+						<span>E: eraser</span>
+						<span>B: brush</span>
+						<span>O: toggle onion</span>
+				</div>
+			</div>
+			<div class="auto" id="canvascontainer">
+				<canvas id="canvas"></canvas>
+			</div>
+		</div>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+    <script type="text/javascript" src="drawer.js"></script>
+	</body>
+</html>
